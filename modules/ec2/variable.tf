@@ -1,11 +1,11 @@
 variable "instance_count" {
-    default = 3
+    default = 1
 }
 
 variable "instance_type" {
-    default = "t3.micro"
+    default = "c7i-flex.large"
 }
 
 variable "instance_name" {
-    default = "ec2-instance"
+    default = "Jenkins-Training"
 }
