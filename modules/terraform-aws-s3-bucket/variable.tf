@@ -3,5 +3,5 @@ variable "bucket_count" {
 }
 
 variable "bucket_name" {
-    default = "s3_artifactory"
+    default = "s3-artifactory"
 }
