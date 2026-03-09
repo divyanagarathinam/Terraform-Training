@@ -1,7 +1,7 @@
 variable "bucket_count" {
-    default = 3
+    default = 1
 }
 
 variable "bucket_name" {
-    default = "s3_bucket_tf_public_module"
+    default = "s3_artifactory"
 }
