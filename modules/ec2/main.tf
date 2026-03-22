@@ -9,7 +9,7 @@ resource "aws_key_pair" "my_key" {
 
  resource "aws_instance" "ec2_instance" {
   for_each = var.instance_names
-  count         = var.instance_count
+  /*count         = var.instance_count*/
   ami           = "ami-0b0b78dcacbab728f"
   instance_type = var.instance_type
 
