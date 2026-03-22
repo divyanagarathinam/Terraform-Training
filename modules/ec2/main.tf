@@ -8,13 +8,14 @@ resource "aws_key_pair" "my_key" {
 }
 
  resource "aws_instance" "ec2_instance" {
+  for_each = var.instance_names
   count         = var.instance_count
-  ami           = "ami-0b6c6ebed2801a5cb"
+  ami           = "ami-0b0b78dcacbab728f"
   instance_type = var.instance_type
 
   key_name = aws_key_pair.my_key.key_name
 
   tags = {
-    Name = "${var.instance_name}-${count.index + 1}"
+    Name = each.value
   }
 }
