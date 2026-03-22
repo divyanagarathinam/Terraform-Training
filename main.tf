@@ -46,7 +46,6 @@ resource "aws_instance" "provisioners" {
 }  
 */
 
-/*
 module "ec2" {
   source = "./modules/ec2"  
 }
@@ -54,7 +53,6 @@ module "ec2" {
 output "print_ec2_instance_ip" {
   value = module.ec2.ec2_instance_ip  
 }
-*/
 
 module "terraform-aws-s3-bucket" {
   source = "./modules/terraform-aws-s3-bucket"  
