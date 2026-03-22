@@ -16,10 +16,14 @@ variable "instance_name" {
   type        = string
   default     = "Jenkins-Training"
 */
-description = "List of EC2 instance names"
-  type        = list(string)
-  default     = ["Ansible", "DEV", "QA", "Monitoring"]
 
+type = map(string)
+  default = {
+    Ansible    = "Ansible"
+    dev        = "dev"
+    test       = "test"
+    monitoring = "monitoring"
+  }
 }
 
 variable "public_key" {
