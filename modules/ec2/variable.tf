@@ -10,7 +10,7 @@ variable "instance_type" {
   default     = "c7i-flex.large"
 }
 
-variable "instance_name" {
+variable "instance_names" {
 /*  
   description = "Base name for EC2 instances"
   type        = string
