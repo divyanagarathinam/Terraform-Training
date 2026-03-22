@@ -1,7 +1,7 @@
 variable "instance_count" {
   description = "Number of EC2 instances to create"
   type        = number
-  default     = 2
+  default     = 4
 }
 
 variable "instance_type" {
@@ -11,9 +11,15 @@ variable "instance_type" {
 }
 
 variable "instance_name" {
+/*  
   description = "Base name for EC2 instances"
   type        = string
   default     = "Jenkins-Training"
+*/
+description = "List of EC2 instance names"
+  type        = list(string)
+  default     = ["Ansible", "DEV", "QA", "Monitoring"]
+
 }
 
 variable "public_key" {
