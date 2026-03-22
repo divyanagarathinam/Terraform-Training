@@ -29,5 +29,5 @@ type = map(string)
 variable "public_key" {
   description = "SSH public key for EC2 access"
   type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHkc8go/R/OI8v5S7pyR625dilCCGDxbVHrp8ioA/swk divya@Divya"
+  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIED2c7XBEW/tek8/5Wc+O2DTtiz/gOyfjzoC6ekhiykM divya@Divya"
 }
